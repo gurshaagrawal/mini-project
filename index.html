@@ -34,7 +34,6 @@
     {
         e.preventDefault()
         var search=document.getElementById("search").value
-        alert(search)
         var originalName=search.split(' ').join('')
         document.getElementById("result").innerHTML=""
         fetch("https://api.github.com/users/"+originalName)
